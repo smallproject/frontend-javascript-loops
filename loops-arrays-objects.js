@@ -15,7 +15,9 @@ const scores = [
 // 92
 // 66
 // ==========================================
-
+for (let i = 0; i < scores.length; i++) {
+    console.log(scores[i].score);
+}
 
 
 
@@ -32,6 +34,39 @@ const scores = [
 // D
 // ==========================================
 
+console.log("hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh")
+for (let i = 0; i < scores.length; i++) {
+    console.log(scores[i].score);
+    let score = scores[i].score;
+    let text = "";
+    switch (score) {
+        case score >= 100: {
+            text = "A";
+            console.log(text);
+            break;
+        }
+        case score >= 90:{
+            console.log("B");
+            break;
+        }
+        case score >= 80: {
+            console.log("C");
+            break;
+        }
+        case score >= 70: {
+            console.log("D");
+            break;
+        }
+        case score >= 60: {
+            console.log("F");
+            break;
+        }
+        default:
+            break;
+    }
+
+    console.log(text);
+}
 
 
 
@@ -75,7 +110,17 @@ const NOVIEmployees = [
 //  ];
 // ==========================================
 
+var element = {}, emailElement = [];
+for (let i = 0; i < NOVIEmployees.length; i++) {
+    let email = `${NOVIEmployees[i].lastName}.${NOVIEmployees[i].lastName}@novi.nl`;
+    console.log(email);
 
+    emailElement.push({element: {email}});
+    NOVIEmployees[i] = { firstName:NOVIEmployees[i].firstName, lastName:NOVIEmployees[i].lastName, email: email};
+}
+
+
+console.log(NOVIEmployees);
 
 
 
@@ -131,5 +176,21 @@ const students = [
 // ]
 // ==========================================
 
+// var element = {}, neighboorhoodElement = [];
+// for (let i = 0; i < students.length; i++) {
+//     let neighborhood = `${students[i].lastName}.${students[i].lastName}@novi.nl`;
+//     console.log(email);
+//
+//     student.push({element: {email}});
+//     NOVIEmployees[i] = { firstName:NOVIEmployees[i].firstName,
+//         lastName:NOVIEmployees[i].lastName,
+//         email: email};
+// }
 
+for (let i = 0; i < students.length; i++) {
+    students[i].neighborhood = 
+}
+
+
+console.log(NOVIEmployees);
 
